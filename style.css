@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(188, 157, 218);
+    
+}
+#aj{
+    margin: 10px -24px;
+}
+#aj img{
+    width: 200px;
+    
+    border-radius: 20px;
+    height: 143px;
+    margin: 0px 41px;;
+}
+
+:root{
+    --navbr-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+    content:"" ;
+    background-color: rgb(14, 158, 62);
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    z-index: -1;
+    opacity: 0.4
+
+    
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: flex;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: purple;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home1{
+   border-radius: 12px; 
+   padding: 12px;
+   margin: 12px;
+    color: rgb(29, 151, 199);
+}
+#home2{
+   border-radius: 12px; 
+   padding: 12px;
+   margin: 12px;
+    color: rgb(29, 151, 199);
+ }
+ #home3{
+    border-radius: 12px; 
+   padding: 12px;
+   margin: 12px;
+    color: rgb(29, 151, 199);
+ }
+ #home4{
+   border-radius: 12px; 
+   padding: 12px;
+   margin: 12px;
+    color: rgb(29, 151, 199);
+ }
+ #home5{
+    border-radius: 12px; 
+    padding: 12px;
+    margin: 12px;
+     color: rgb(29, 151, 199);
+  }
+  #home6{
+    border-radius: 12px; 
+    padding: 12px;
+    margin: 12px;
+     color: rgb(29, 151, 199);
+  }
+ #home2:hover{
+     color: rgb(35, 180, 132);
+     
+ }
+ #home3:hover{
+    color: rgb(35, 180, 132);
+    
+}
+#home4:hover{
+    color: rgb(35, 180, 132);
+    
+}
+#home1:hover{
+    color: rgb(35, 180, 132);
+    
+}
+#home::before{
+    content:"" ;
+/* background-image: url('../img/img1.png') ;  */
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    z-index: -1;
+    opacity: 0.8
+}
+#home h1{
+    color: rgb(175, 21, 21);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    width: 200px;
+    border-radius: 12px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+text-align: center;
+justify-content: center;
+
+}
+#services .box{
+    border: 2px solid black;
+    border-radius: 12px;
+}
+#services{
+    
+}
