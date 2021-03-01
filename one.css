@@ -1,0 +1,45 @@
+body{
+    /* background-image: url("https://media2.giphy.com/media/13USt1URETlUFG/giphy.gif"); */
+}
+
+
+.two {
+    color: rgba(250, 172, 3, 0.815);
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 22px;
+    margin: 122px;
+    margin-top: 50px;
+    box-shadow: 4px 12px 33px rgb(179, 15, 179);
+    display: inline-block;
+    align-items: center;
+    width: 230px;
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
+    position: relative;
+    animation: aj1;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    background-image: url(https://media2.giphy.com/media/13USt1URETlUFG/giphy.gif);
+    
+}
+@keyframes aj1 {    
+    from{
+box-shadow:3px 3px 44px yellow;
+    }
+    to{
+        
+box-shadow:4px 4px 44px rgba(117, 31, 16, 0.795);
+    }
+    to{
+        box-shadow: 4px 12px 44px rgb(179, 15, 179);
+    }
+    
+}
+.two:hover{
+    color: rgba(32, 179, 118, 0.74);
+    box-shadow: 3px 3px 444px yellow;
+    
+
+}
