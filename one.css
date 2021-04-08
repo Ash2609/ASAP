@@ -21,7 +21,7 @@ body{
     animation: aj1;
     animation-duration: 2s;
     animation-iteration-count:infinite;
-    background-image: url(https://media2.giphy.com/media/13USt1URETlUFG/giphy.gif);
+    /* background-image: url(https://media2.giphy.com/media/13USt1URETlUFG/giphy.gif); */
     
 }
 @keyframes aj1 {    
