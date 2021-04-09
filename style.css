@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(184 226 248);
     /* background-color: rgb(188, 157, 218); */
     /* background-image: url("ironman1.jpg"); */
     /* background-color: rgb(245, 245, 245); */
@@ -30,7 +31,7 @@ body{
     /* opacity: 0.5; */
     border-radius: 20px;
     height: 236px;
-    margin: -55px 653px;
+    margin: -27px 653px;
     /* clip-path: polygon(100% 0, 0 55%, 100% 92%); */
 }
 .aj img:hover{
@@ -85,7 +86,7 @@ body{
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
-    color: rgb(192, 26, 54);
+    /* color: rgb(192, 26, 54); */
     
     
 }
@@ -97,9 +98,9 @@ body{
    border-radius: 12px; 
    padding: 12px;
    margin: 12px;
-    color: rgb(29, 151, 199);
+    color: rgb(15, 15, 15);
     font-family: 'Langar', cursive; 
-    box-shadow: 2px 3px 44px red;
+    /* box-shadow: 2px 3px 44px red; */
     
     
 }
@@ -107,9 +108,9 @@ body{
    border-radius: 12px; 
    padding: 0px;
    margin: 12px;
-    color: rgb(29, 151, 199);
+    color: rgb(0, 0, 0);
     font-family: 'Langar', cursive; 
-    box-shadow: 2px 3px 44px red;
+    /* box-shadow: 2px 3px 44px red; */
     
     
  }
@@ -117,9 +118,9 @@ body{
     border-radius: 12px; 
    padding: 0px;
    margin: 12px;
-    color: rgb(29, 151, 199);
+    color: rgb(0, 0, 0);
     font-family: 'Langar', cursive; 
-    box-shadow: 2px 3px 44px red;
+    /* box-shadow: 2px 3px 44px red; */
     
     
  }
@@ -128,8 +129,8 @@ body{
    padding: 0px;
    margin: 12px;
    font-family: 'Langar', cursive;
-   box-shadow: 2px 3px 44px red;
-    color: rgb(29, 151, 199)
+   /* box-shadow: 2px 3px 44px red; */
+    color: rgb(0, 0, 0)
     
     
     
@@ -138,9 +139,9 @@ body{
     border-radius: 12px; 
     padding: 0px;
     margin: 12px;
-     color: rgb(29, 151, 199);
+     color: rgb(3, 3, 3);
      font-family: 'Langar', cursive;    
-     box-shadow: 2px 3px 44px red;
+     /* box-shadow: 2px 3px 44px red; */
      
      
   }
@@ -148,9 +149,9 @@ body{
     border-radius: 12px; 
     padding: 0px;
     margin: 12px;
-     color: rgb(29, 151, 199);
+     color: rgb(0, 0, 0);
      font-family: 'Langar', cursive; 
-     box-shadow: 2px 3px 44px red;   
+     /* box-shadow: 2px 3px 44px red;    */
      
      
   }
@@ -158,16 +159,16 @@ body{
     border-radius: 12px; 
     padding: 0px;
     margin: 12px;
-     color: rgb(29, 151, 199);
+     color: rgb(0, 0, 0);
      font-family: 'Langar', cursive; 
-     box-shadow: 2px 3px 44px red;   
+     /* box-shadow: 2px 3px 44px red;    */
      
 
   }
   #home7:hover{
     color: rgb(6, 8, 139);
      background-color: transparent;
-     color: violet;
+     color: rgb(0, 0, 0);
      
      
      
@@ -175,14 +176,14 @@ body{
  #home2:hover{
      color: rgb(6, 8, 139);
      background-color: transparent;
-     color: violet;
+     color: rgb(0, 0, 0);
      
      
  }
  #home3:hover{
     color: rgb(10, 25, 114);
     background-color: transparent;
-    color: violet;
+    color: rgb(0, 0, 0);
     
     
 }
@@ -190,28 +191,28 @@ body{
 #home4:hover{
     color: rgb(2, 23, 92);
     background-color: transparent;
-    color: violet;
+    color: rgb(0, 0, 0);
     
     
 }
 #home1:hover{
     color: rgb(50, 9, 146);
     background-color: transparent;
-    color: violet;
+    color: rgb(0, 0, 0);
     
     
 }
 #home5:hover{
     color: rgb(2, 23, 92);
     background-color: transparent;
-    color: violet;
+    color: rgb(0, 0, 0);
     
     
 }
 #home6:hover{
     color: rgb(2, 23, 92);
     background-color: transparent;
-    color: violet;
+    color: rgb(0, 0, 0);
     
     
 }
