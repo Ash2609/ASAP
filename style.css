@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(184 226 248);
+    
     /* background-color: rgb(188, 157, 218); */
     /* background-image: url("ironman1.jpg"); */
     /* background-color: rgb(245, 245, 245); */
     
 }
 body{
+    background-color: rgb(184 226 248);
     /* background-image: url("https://images.bewakoof.com/original/iron-man-of-war-half-sleeve-t-shirt-avl-men-s-printed-t-shirts-220650-1584415927.jpg");
     background-repeat: no-repeat; */
     /* background-attachment: fixed;   */
@@ -96,7 +97,7 @@ body{
 }
 #home1{
    border-radius: 12px; 
-   padding: 12px;
+   padding: 0px;
    margin: 12px;
     color: rgb(15, 15, 15);
     font-family: 'Langar', cursive; 
