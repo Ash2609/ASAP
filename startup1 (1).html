@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<body style="background-color:powderblue;">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ASAP</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serify;
+      text-decoration: none;
+    }
+
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(#0f4675, #334555, 50%, rgb(104, 51, 51) 50%, rgb(165, 172, 76) 100%);
+    }
+
+    .container {
+      width: 6000px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      /* cursor: pointer; */
+      cursor: inherit;
+
+    }
+
+    .container .box {
+      position: relative;
+      width: 320px;
+      background: #fff;
+      padding: 100px 40px 60px;
+      box-shadow: 0 15px 45px rgb(0, 0, 0, .1);
+    }
+
+    .container .box:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff226d;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.5s;
+    }
+
+    .container .box:hover:before {
+      transform: scaleY(1);
+      transform-origin: bottom;
+      transition: transform 0.5s;
+    }
+
+    .container .box h2 {
+      position: absolute;
+      left: 40px;
+      top: 60px;
+      font-weight: 800;
+      z-index: 1;
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+
+    .container .box:hover h2 {
+      opacity: 1;
+      color: #fff;
+      transform: translateY(-40px);
+    }
+
+    .container .box h3 {
+      position: relative;
+      font-size: 1.5em;
+      z-index: 2;
+      color: #333;
+      transition: 0.5s;
+    }
+
+    .container .box p {
+      position: relative;
+      z-index: 2;
+      color: #555;
+      transition: 0.5s;
+    }
+
+    .container .box:hover h3,
+    .container .box:hover p {
+      color: #fff;
+    }
+
+    .name {
+      padding: 2rem;
+      color: goldenrod;
+      margin: 12rem;
+      font-size: 32px;
+      text-shadow: 12px 12px 8px rgb(0, 0, 0);
+
+
+
+
+    }
+
+    a:link {
+      color: rgb(180, 170, 28);
+
+    }
+
+    a:hover {
+      color: #333;
+
+    }
+    .more{
+      margin: 50px;
+      /* padding: 22px; */
+      margin-left: 1280px;
+      cursor: pointer;
+      
+      
+
+    }
+    .btn{
+      color: #573842;
+      border-radius: 12px;
+      background-color: rgb(58, 148, 184);
+    }
+    .btn:hover{
+      color: blanchedalmond;
+      background-color: rgb(43, 95, 163);
+      font-family: cursive;
+      box-shadow: 2px 3px 12px red;
+    }
+    
+  </style>
+
+  <body>
+    <div class="name">
+      <h2>ASAP</h2>
+      <p1>We Make Work An Adventure</p>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="login.html" class="active"><button>Login</button></a>
+      <!-- <a href="aboutus.html">ABOUT US</a>
+      <a href="contactus.html">CONTACT US</a> -->
+      
+      
+      
+      <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+  </div>
+    <div class="container">
+      <div class="box">
+        <h2>01</h2>
+        <h3>Company Name</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione sunt incidunt exercitationem.
+        </p>
+        <p> <a href="#">Read More</a></p>
+      </div>
+      <div class="box">
+        <h2>02</h2>
+        <h3>Company Name</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut fugiat quia doloremque!
+        </p>
+        <p><a href="#">Read More</a></p>
+      </div>
+      <div class="box">
+        <h2>03</h2>
+        <h3>Company Name</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam laudantium officiis.</p>
+        <p> <a href="#">Read More</a></p>
+      </div>
+      <div class="box">
+        <h2>04</h2>
+        <h3>Company Name</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam laudantium officiis.</p>
+        <p> <a href="#">Read More</a></p>
+      </div>
+    <div class="more">
+      <a href="startup2.html"><button class="btn">VIEW MORE</button>
+
+    </div>
+      
+    </div>
+    </div>
+    
+
+  </body>
+
+</html>
