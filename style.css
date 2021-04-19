@@ -248,6 +248,15 @@ body{
     color: tomato;
     background-color: transparent;
 }
+
+.btn2{
+    text-align: center;
+    /* padding: 12px;   */
+    margin:80px;
+    margin-left: 980px;
+     
+
+}
 #services{
     margin: 34px;
     display: flex;
@@ -352,4 +361,27 @@ img, video {
 max-width: 15%;
 height: auto;
 padding: 0%;
+}
+.sign{
+    margin: 12px;
+    padding: 12px;
+    background-color: rgb(131, 57, 57);
+    color: blanchedalmond;
+    
+
+}
+.sign:hover{
+    box-shadow: 2px 1px 18px rgb(55, 184, 113);
+}
+
+.log{
+    margin: 12px;
+    padding: 12px;
+    background-color: black;
+    color: blanchedalmond;
+
+}
+.log:hover{
+    box-shadow: 2px 1px 18px rgb(180, 110, 53);
+
 }
