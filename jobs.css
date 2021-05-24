@@ -97,7 +97,23 @@ b{
     background:rgb(180, 206, 206);
     cursor: pointer;
 }
-/* .form-box{
-    background: rgba(0,0,0,0.5);
-    padding: 10px;
-} */
+.signin{
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    padding: 1rem;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 675px;
+    margin-top: 55px;
+}
+.line{
+    padding: 1rem;
+    width: 8rem;
+    height: 4rem;
+    margin: 1rem;
+    float: right;
+}
