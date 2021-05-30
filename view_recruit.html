@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASAP</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/signup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>ASAP</title>
+    </head>
+    <style>
+        * {
+            /* background-color: white; */
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar1 {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            height: 3rem;
+            width: 90rem;
+            /* background-color: violet; */
+
+        }
+
+        #navbar::before {
+            content: " ";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            /* opacity: 0.3; */
+            /* background: url('https://cdn.pixabay.com/photo/2017/03/20/21/00/server-2160321_1280.jpg'); */
+            /* background-repeat: no-repeat; */
+
+        }
+
+        #navbar1 ul {
+            display: flex;
+            padding: 0px;
+            margin: 112px 320px;
+
+        }
+
+        #navbar1 ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar1 ul li a {
+            display: block;
+            padding: 0px 13px;
+            border-radius: 20px;
+            color: rgb(54, 55, 145);
+            cursor: pointer;
+            text-decoration: none;
+
+        }
+
+        #navbar1 ul li a:hover {
+            color: black;
+            background-color: rgb(84, 185, 93);
+            opacity: 0.4;
+        }
+
+        .bgimg {
+            width: 12rem;
+        }
+
+        #mySearch {
+            width: 13rem;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid rgb(100, 3, 3);
+            border-radius: 22px;
+            height: 2rem;
+            opacity: 0.3;
+            background-color: black;
+        }
+
+        #mySearch:hover {
+            background-color: transparent;
+        }
+
+        .signupbtn {
+            background-color: rgb(47, 66, 83);
+            width: 12rem;
+            border-radius: 2rem;
+
+        }
+        .gap{
+            padding: 2rem;
+            line-height: 3rem;
+            margin: 2rem;
+            /* height: 100%; */
+            width: 90%;
+        }
+    </style>
+
+    <body>
+        <a href="index.html"> <img class="bgimg" src="img/asap.png" alt="ASAP"></a>
+
+
+        <div>
+            <nav id="navbar1">
+
+                <ul>
+                    <li><a href="recruit.html">Home</a></li>
+                    <li><a href="post_job.html">Post A Job</a></li>
+                    <li><a href="edit_j.html">Edit</a></li>
+                    <li> <a href="view_recruit.html">View </a></li>
+                    <li> <a href="">More</a></li>
+                </ul>
+                <input type="text" id="mySearch" placeholder="Search..">
+
+            </nav>
+        </div>
+        <div class="gap">
+            <h1>Details</h1>
+            <hr>
+            <p><b>NAME:</b>ASHISH BHARAT JADHAV</p>
+            <p><b>EMAIL:</b>jadhavashishaj09@gmail.com</p>
+            <p><b>COMPANY NAME:</b>ASAP.PVT.LTD</p>
+            <p><b>TILE/JOB NAME:</b>CEO OF ASAP</p>
+            <p><b>TYPE:</b>WORK FROM HOME</p>
+            <p><b>ABOUT COMPANY:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam exercitationem
+                libero!<br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp Lorem, ipsum. Lorem ipsum dolor sit.<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp https://www.asap.com</p>
+            <p><b>DESCRIPTION:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas animi voluptates dolorum excepturi dolorem libero deserunt officia id ea. Quos asperiores nulla voluptas nihil recusandae corporis quae aliquam incidunt odio fugiat numquam, enim illum. Alias nihil dolor ex error. Delectus necessitatibus minus consequatur nisi!</p>
+            <p><b>WHO CAN APPLY:</b>SHRADDHA GANGANE</p>
+            <p><b>ABOUT JOB:</b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, dicta dolor nostrum veritatis labore dolorum, velit exercitationem quos tenetur quod libero sit fugit omnis dolores recusandae atque, aliquam nihil voluptas! Dignissimos officiis eaque molestiae pariatur ad totam minima ea omnis facilis inventore dolor aliquam dolorem consequatur mollitia qui hic explicabo non eos provident, obcaecati aliquid. Odit atque inventore in possimus maiores ad et doloribus incidunt facere.</p>
+            <p><b>ADDITIONAL INFO:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis exercitationem ea ut!</p>
+            <p><b>CRITERIA:</b>SUPRAJA JADHAV</p>
+            <p><b>OTHER REQUIREMENTS:</b>ASHISH JADHAV</p>
+            <p><b>NO. OF OPENINGS:</b>2</p>
+            <p><b>START DATE:</b>MAY 2021</p>
+            <p><b>APPLY BY:</b>JULY 2021</p>
+            <button style="color: rgb(221, 92, 92); background-color: antiquewhite; border-radius: 12rem;">Edit</button>
+            
+
+        </div>
+
+
+        <!-- <div class="container">
+    <h1>Post Job</h1>
+    
+    <hr>
+    <form action="signup.php" method="post">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="surname"><b>Email:</b></label>
+        <input type="text" placeholder="Enter Email" name="surname" required><br>
+
+        <label for="name"><b>Company Name:</b></label>
+        <input type="text" placeholder="company name" name="cname" required><br>
+
+        <label for="name"><b>Title/job Name:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Type(work from home/virtual):</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>About Company & Company Website:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Description/Who can apply:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>About Job:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Additional Info:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Criteria:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Other Requirements:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>No. Of opening position:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Start Date:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+
+        <label for="name"><b>Apply By:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="email"><b>Desc:</b></label>
+        <input type="text" placeholder="Job Desc" name="desc" required><br>
+
+        <label for="psw"><b>Role:</b></label>
+        <input type="password" placeholder="Job Role" name="psw" required><br>
+
+        <label for="psw-repeat"><b>Category:</b></label>
+        <input type="password" placeholder="Category" name="psw-repeat" required><br>
+        
+       
+    </div>
+    </form> -->
+        
+    </body>
+
+    </html>
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ASAP</title>
+</head>
+<style>
+*{
+    /* background-color: white; */
+    padding: 0;
+    margin: 0;
+}
+
+#navbar1 {
+display: flex;
+align-items: center;
+position: relative;
+justify-content: center;
+height: 3rem;
+width: 90rem;
+/* background-color: violet; */
+
+}
+
+#navbar::before {
+  content: " ";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* opacity: 0.3; */
+  /* background: url('https://cdn.pixabay.com/photo/2017/03/20/21/00/server-2160321_1280.jpg'); */
+  /* background-repeat: no-repeat; */
+
+}
+
+#navbar1 ul {
+  display: flex;
+  padding: 0px;
+  margin: 112px 320px;
+
+}
+
+#navbar1 ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar1 ul li a {
+  display: block;
+  padding: 0px 13px;
+  border-radius: 20px;
+  color: rgb(54, 55, 145);
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+#navbar1 ul li a:hover {
+  color: black;
+  background-color: rgb(84, 185, 93);
+  opacity: 0.4;
+}
+.bgimg{
+    width: 12rem;
+}
+#mySearch {
+width: 13rem;
+font-size: 18px;
+padding: 11px;
+border: 1px solid rgb(100, 3, 3);
+border-radius: 22px;
+height: 2rem;
+opacity: 0.3;
+background-color: black;
+}
+#mySearch:hover{
+background-color: transparent;
+}
+.signupbtn{
+background-color: rgb(100, 162, 216);
+width: 12rem;
+border-radius: 2rem;
+
+}
+textarea {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 2rem;
+            height: 200px;
+            resize: vertical;
+        }
+
+</style>
+<body>
+    <a href="index.html"><img class="bgimg" src="img/asap.png" alt="ASAP">    </a>
+
+
+<div>
+    <nav id="navbar1">
+
+        <ul>
+            <li><a href="recruit.html">Home</a></li>
+            <li><a href="post_job.html">Post A Job</a></li>
+            <li><a href="edit_j.html">Edit</a></li>
+            <li> <a href="view_recruit.html">View </a></li>
+            <li> <a href="">More</a></li>
+        </ul>
+        <input type="text" id="mySearch"  placeholder="Search.." >
+
+    </nav>
+</div>
+
+<div class="container">
+    <h1>Edit details</h1>
+
+    <hr>
+    <form action="signup.php" method="post">
+        <label for="name"><b>Name:</b></label><br>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="surname"><b>Email:</b></label><br>
+        <input type="text" placeholder="Enter Email" name="surname" required><br>
+
+        <label for="name"><b>Company Name:</b></label><br>
+        <input type="text" placeholder="company name" name="cname" required><br>
+
+        <label for="psw-repeat"><b>Category:</b></label><br>
+        <input type="password" placeholder="Category" name="psw-repeat" required><br>
+
+
+        <label for="name"><b>Title/job Name:</b></label><br>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Type(work from home/virtual):</b></label><br>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>About Company & Company Website:</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+        <label for="name"><b>Description/Who can apply:</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+        <label for="name"><b>About Job:</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+        <label for="name"><b>Additional Info:</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+        <label for="name"><b>Criteria:</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+        <label for="name"><b>Other Requirements:</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+        <label for="name"><b>No. Of opening position:</b></label><br>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="name"><b>Start Date:</b></label><br>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+
+        <label for="name"><b>Apply By:</b></label><br>
+        <input type="text" placeholder="Enter Name" name="name" required><br>
+
+        <label for="desc"><b>Desc:</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+        
+
+        
+
+        <div class="clearfix">
+
+            <button type="submit" class="signupbtn">Edit</button>
+        </div>
+</div>
+</form>
+</div>
+
+        <footer>
+            <section>
+                <div class="footer1">
+
+                    <h1>ASAP</h1>
+                    <p>We Make Work An Adventure<br> </p>
+                    <p><br></p>
+                    <p class="address">M.B.E.SOCIETY'S COLLEGE OF ENGINEERING,
+                        Ambajogai<br>Ambajogai-431517<br>Dist-Beed<br>Maharashtra(INDIA)</p>
+
+
+                    <p class="copyright"><br>All Rights Are Reserved To,<br>© 2020 ASAP</p>
+                    <hr>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    
+                    
+
+                    <!-- <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                        <a class="text-violet-500">ASAP</a>
+                        <span class="inline-flex">
+                            <a class="text-gray-500">
+                                <svg fill="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="red" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </span>
+                    </div> -->
+                </div>
+
+
+            </section>
+
+        </footer>
+
+
+    
+</body>
+</html>
