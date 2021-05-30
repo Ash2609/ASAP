@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<body style="background-color:powderblue;">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ASAP</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 3px;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serify;
+      text-decoration: none;
+    }
+
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      height: 12rem;
+      background: linear-gradient(#0f4675, #334555, 50%, rgb(104, 51, 51) 50%, rgb(165, 172, 76) 100%);
+    }
+
+    .container {
+      /* width: 6000px; */
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      /* cursor: pointer; */
+      cursor: inherit;
+    }
+
+    .container .box {
+      position: relative;
+      margin-top: 12rem;
+      width: 320px;
+      background: #fff;
+      padding: 100px 40px 60px;
+      box-shadow: 0 15px 45px rgb(0, 0, 0, .1);
+    }
+
+    .container .box:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff226d;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.5s;
+    }
+
+    .container .box:hover:before {
+      transform: scaleY(1);
+      transform-origin: bottom;
+      transition: transform 0.5s;
+    }
+
+    .container .box h2 {
+      position: absolute;
+      left: 40px;
+      top: 60px;
+      font-weight: 800;
+      z-index: 1;
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+
+    .container .box:hover h2 {
+      opacity: 1;
+      color: #fff;
+      transform: translateY(-40px);
+    }
+
+    .container .box h3 {
+      position: relative;
+      font-size: 1.5em;
+      z-index: 2;
+      color: #333;
+      transition: 0.5s;
+    }
+
+    .container .box p {
+      position: relative;
+      z-index: 2;
+      color: #555;
+      transition: 0.5s;
+    }
+
+    .container .box:hover h3,
+    .container .box:hover p {
+      color: #fff;
+    }
+
+    .name {
+      padding: 2rem;
+      color: goldenrod;
+      margin: 21px;
+      font-size: 32px;
+      text-shadow: 12px 12px 8px rgb(0, 0, 0);
+
+
+
+
+    }
+
+    a:link {
+      color: rgb(180, 170, 28);
+
+    }
+
+    a:hover {
+      color: #333;
+
+    }
+
+    .more {
+      margin: 50px;
+      /* padding: 22px; */
+      margin-left: 1280px;
+      cursor: pointer;
+
+
+
+    }
+
+    .btn {
+      color: #573842;
+      border-radius: 12px;
+      background-color: rgb(58, 148, 184);
+    }
+
+    .btn:hover {
+      color: blanchedalmond;
+      background-color: rgb(43, 95, 163);
+      font-family: cursive;
+      box-shadow: 2px 3px 12px red;
+    }
+
+    #navbar1 {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+
+    }
+
+    #navbar::before {
+      content: " ";
+      background-color: black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      /* opacity: 0.3; */
+      background: url('https://cdn.pixabay.com/photo/2017/03/20/21/00/server-2160321_1280.jpg');
+      /* background-repeat: no-repeat; */
+
+    }
+
+    #navbar1 ul {
+      display: flex;
+      padding: 0px;
+      margin: 112px 320px;
+
+    }
+
+    #navbar1 ul li {
+      list-style: none;
+      font-size: 1.3rem;
+    }
+
+    #navbar1 ul li a {
+      display: block;
+      padding: 0px 13px;
+      border-radius: 20px;
+      color: rgb(151, 206, 203);
+
+    }
+
+    #navbar1 ul li a:hover {
+      color: black;
+      background-color: white;
+      opacity: 0.4;
+    }
+
+    .log1 {
+      margin: 12px;
+      padding: 12px;
+      border-radius: 12px;
+      background-color: rgb(117, 72, 72);
+      color: rgb(202, 178, 178);
+      width: 6rem;
+
+    }
+
+    .log1:hover {
+      box-shadow: 2px 1px 18px rgb(180, 110, 53);
+      /* color: transparent; */
+      opacity: 0.5;
+      
+
+    }
+    #mySearch {
+    /* margin-top: 2rem; */
+    padding: 2rem;
+    width: 23rem;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid rgb(197, 139, 139);
+    border-radius: 22px;
+    height: 2rem;
+    background-color: black;
+  }
+  #mySearch:hover{
+    background-color: transparent;
+  }
+
+  /* ---------------------------------------------footer------------------------------------ */
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 49px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+  * {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: rgb(15 15 15);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+  opacity: 0.8;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+img, video {
+    max-width: 50%;
+    height: auto;
+    padding: 0%;
+}
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #fff700ad;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #3d9fdb;
+	border-radius: 2px;
+
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color: #ccc  ;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+  opacity: 20px;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left.logo{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	} 
+
+	.footer-distributed form button{
+		float: none;
+	}
+} 
+
+  </style>
+
+  <body>
+  <a href="index.html">  <div class="name">
+      <h2>ASAP</h2>
+      <p1>We Make Work An Adventure</p>
+    </div>
+    <div></a>
+      <nav id="navbar1">
+
+        <ul>
+          <li><a href="startupf.html.html">Home</a></li>
+          <li><a href="sregs.html">Register </a></li>
+          <li><a href="edit.html">Edit</a></li>
+          <li> <a href="view.html">View</a></li>
+
+          <input type="text" id="mySearch"  placeholder="Search.." >
+        </div>
+
+        </ul>
+
+      </nav>
+    </div>
+
+    <a href="j_signin.html"> <button class="log1">Log In</button></a>
+   <div class="container">
+      <div class="box">
+        <h2>01</h2>
+        <h3>The Visioneers</h3>
+        <hr>
+        <p>
+        - Architectural Drawing(2D,3D,View)<br>
+        - Structural Design R.C.C<br>
+        - Estimating And Costing<br>
+        - Site Supervision And Execution
+         <b>Cell :</b>9655713210 
+          </p>
+        <p> <a href="view.html">Read More</a></p>
+      </div>
+      <div class="box">
+        <h2>02</h2>
+        <h3>Ajwa Traders</h3>
+        <hr>
+        <p>Instant Color Full Printing<br>
+              in Art Card Art Paper<br>
+            Laser Paper Sticker,<br>
+             Color Photocopy Facility<br>
+               are available<br>
+            <b>Cell :</b>9820345129
+        </p>
+        
+        <p><a href="view.html">Read More</a></p>
+      </div>
+      <div class="box">
+        <h2>03</h2>
+        <h3>Lankari Fianance</h3>
+        <hr>
+        <p> - Affordable  Home Loans,<br>
+            - Gold Loans,<br>
+            - Loan Against Property,<br>
+            - Bridging loans<br>
+            <b>Cell :</b>7218945014</p>
+        <p> <a href="view.html">Read More</a></p>
+      </div>
+      <div class="box">
+        <h2>04</h2>
+        <h3>Avion Audiovisuals</h3>
+        <hr>
+        <p> - Interactive Technology<br>
+            - Sales & Integration<br>
+            - Audio visual<br>
+            - LED display<br>
+            - Event management<br>
+            - Photography & Videography<br>
+          </p>
+        <p> <a href="v">Read More</a></p>
+      </div>
+      <div class="more">
+        <a href="startup2.html"><button class="btn">VIEW MORE</button>
+
+      </div>
+
+    </div>
+    </div>
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+        <img src="asap.png">
+
+				<!-- <p class="footer-links">
+					<a href="#">Home</a>
+					·
+					 <a href="#">Blog</a>
+					· -->
+					<!-- <a href="#">Pricing</a>
+					· -->
+					<!-- <a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p> --> 
+
+				<!-- <p class="footer-company-name">Asap © 2021</p> -->
+        <br>
+				<!-- <div class="footer-icons "> -->
+
+					<a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<center><button>Send</button></center>
+          <br><br><br><br><br><br>
+          <p>@Copyright 2021, Asapweb. All Rights Reserved |&#10084;&#65039;
+          </i></p>
+				</form>
+
+			</div>
+
+		</footer>
+
+  </body>
+</html>
