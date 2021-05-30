@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+</head>
+<!-- <style>
+*{
+    margin: 2px;
+    margin-top: -44px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding: 73px;
+    margin-top: -44px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serify;
+    text-decoration: none;
+}
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(rgb(151 206 203), rgb(151 206 203), 50%, rgb(151 206 203) 50%, rgb(58 148 184) 100%)
+    }
+    .container {
+      width: 6000px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      /* cursor: pointer; */
+      cursor: inherit;
+
+    }
+
+    .container .box {
+      position: relative;
+      width: 320px;
+      background: #fff;
+      padding: 100px 40px 60px;
+      box-shadow: 0 15px 45px rgb(0, 0, 0, .1);
+    }
+
+    .container .box:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff226d;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.5s;
+    }
+
+    .container .box:hover:before {
+      transform: scaleY(1);
+      transform-origin: bottom;
+      transition: transform 0.5s;
+    }
+
+    .container .box h2 {
+      position: absolute;
+      left: 40px;
+      top: 60px;
+      font-weight: 800;
+      z-index: 1;
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+
+    .container .box:hover h2 {
+      opacity: 1;
+      color: #fff;
+      transform: translateY(-40px);
+    }
+
+    .container .box h3 {
+      position: relative;
+      font-size: 1.5em;
+      z-index: 2;
+      color: #333;
+      transition: 0.5s;
+    }
+
+    .container .box p {
+      position: relative;
+      z-index: 2;
+      color: #555;
+      transition: 0.5s;
+    }
+
+    .container .box:hover h3,
+    .container .box:hover p {
+      color: #fff;
+    }
+
+    .name {
+    padding: 2rem;
+    color: #ff226d;
+    margin: 21px;
+    font-size: 32px;
+    text-shadow: 12px 12px 8px rgb(0 0 0);
+}
+
+    a:link {
+      color: rgb(180, 170, 28);
+
+    }
+
+    a:hover {
+      color: #333;
+
+    }
+    .more{
+      margin: 50px;
+      /* padding: 22px; */
+      margin-left: 1280px;
+      cursor: pointer;
+      
+      
+
+    }
+    
+    .name {
+    padding: 2rem;
+    color: #ff226d;
+    margin: 21px;
+    font-size: 32px;
+    text-shadow: 12px 12px 8px rgb(0 0 0);
+}
+    a:link {
+      color: rgb(180, 170, 28);
+
+    }
+
+    a:hover {
+      color: #333;
+
+    }
+
+    .more {
+      margin: 50px;
+      /* padding: 22px; */
+      margin-left: 1280px;
+      cursor: pointer;
+
+
+
+    }
+
+    .btn {
+      color: #573842;
+      border-radius: 12px;
+      background-color: rgb(58, 148, 184);
+    }
+
+    .btn:hover {
+      color: blanchedalmond;
+      background-color: rgb(43, 95, 163);
+      font-family: cursive;
+      box-shadow: 2px 3px 12px red;
+    }
+
+    #navbar1 {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+
+    }
+
+    #navbar::before {
+      content: " ";
+      background-color: black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      /* opacity: 0.3; */
+      background: url('https://cdn.pixabay.com/photo/2017/03/20/21/00/server-2160321_1280.jpg');
+      /* background-repeat: no-repeat; */
+
+    }
+    .log1 {
+      margin: 12px;
+      padding: 12px;
+      border-radius: 12px;
+      background-color: rgb(117, 72, 72);
+      color: rgb(202, 178, 178);
+      width: 6rem;
+
+    }
+
+    .log1:hover {
+      box-shadow: 2px 1px 18px rgb(180, 110, 53);
+      /* color: transparent; */
+      opacity: 0.5;
+      
+
+    }
+
+    #navbar1 ul {
+      display: flex;
+      padding: 0px;
+      margin: 112px 320px;
+
+    }
+
+    #navbar1 ul li {
+      list-style: none;
+      font-size: 1.3rem;
+    }
+
+    #navbar1 ul li a {
+    display: block;
+    padding: 0px 13px;
+    border-radius: 20px;
+    color: #573842;
+}
+
+    #navbar1 ul li a:hover {
+      color: black;
+      background-color: white;
+      opacity: 0.4;
+    }
+    #mySearch {
+    /* margin-top: 2rem; */
+    padding: 2rem;
+    width: 13rem;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid rgb(197, 139, 139);
+    border-radius: 22px;
+    height: 2rem;
+    background-color: black;
+  }
+  #mySearch:hover{
+    background-color: transparent;
+  }
+    </style>
+    <body>
+    <div class="name">
+      <h2>ASAP</h2>
+      <p1>We Make Work An Adventure</p>
+    </div>
+    <div>
+      <nav id="navbar1">
+  
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="sregs.html">Register </a></li>
+          <li><a href="edit.html">Edit</a></li>
+          <li> <a href="">View</a></li>
+  
+          <input type="text" id="mySearch"  placeholder="Search.." >
+  
+        </ul>
+  
+      </nav>
+    </div> -->
+    <style>
+      #navbar1 ul {
+    display: flex;
+    padding: 0px;
+    margin: 20px 432px;
+    margin-top: auto;
+}
+    #navbar1 ul li {
+      list-style: none;
+      font-size: 1.3rem;
+      margin-top: -10px;
+    }
+
+    #navbar1 ul li a {
+    display: block;
+    padding: 0px 13px;
+    border-radius: 20px;
+    color: #573842;
+}
+
+    #navbar1 ul li a:hover {
+      color: black;
+      background-color: white;
+      opacity: 0.4;
+    }
+    #mySearch {
+    /* margin-top: 2rem; */
+    padding: 2rem;
+    width: 131rem;
+    margin-top: -10px;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid rgb(197, 139, 139);
+    border-radius: 22px;
+    height: 1rem;
+    background-color: rgb(90 88 88 / 16%);
+}
+  /* #mySearch:hover{
+    background-color: transparent;
+  } */
+  body{
+  background-image: url('bg1.jpg');
+  }
+.name{
+            font-size: 20px;
+}
+img, video {
+    max-width: 20%;
+    height: auto;
+    padding: 0%;
+}
+.h1 {
+    margin-top: -90px;
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+    opacity: 1;
+}
+    </style>
+
+    <body>
+      <div>
+        <nav id="navbar1">
+          <img src="asap.png">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="sregs.html">Register </a></li>
+            <li><a href="edit.html">Edit</a></li>
+            <li> <a href="view.html">View</a></li>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" id="mySearch"  placeholder="Search.." >
+            </ul><h1 class="h1">Details</h1><hr>
+    </nav>
+        <div class="name">
+        <b>Company Name : </b>The Visioneers<br><br>
+        <b>Owner Name : </b>Kunal Bhise<br><br>
+        <b>Company Mailing Address </b><br><br>
+        <b>Street Address : </b>The visioneer shivaji nagar road no.1<br><br>
+        <b>City : </b>Kalamb<br><br>
+        <b>Zip code : </b>431123<br><br>
+        <b>State : </b>Maharashtra<br><br>
+        <b>Company Mail-Id : </b>thevisioneer2013@gmail.com<br><br>
+        <b>Industry : </b>Architectural<br><br>
+        <b>Phone : </b>+91 &nbsp;9786543210<br><br>
+        <b>Website : </b><a href="">www.thevisioneers.com</a><br><br>
+        <b>Company Description : </b>&nbsp;   - Architectural Drawing(2D,3D,View)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Structural Design R.C.C<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Estimating And Costing<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Site Supervision And Execution<br>
+        </div>
+    <br>
+    <br>
+    <button type="submit" class="registerbtn"><a href="sregs.html">EDIT</a></button>   
+    </body>
