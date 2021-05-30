@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+nav{
+    width: 100%;
+    background:rgba(175, 174, 174, 0.562);
+    overflow:auto;
+}
+nav :hover{
+    color: w;
+}
+ul{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+
+}
+li{
+    float: left;
+
+}
+.logo img{
+    position: absolute;
+    size: 20px;
+    height: 185px;
+    width: 203px;
+    margin-top: -11px;
+    margin-left: 1px;
+
+}
+nav a{
+    width: 150px;
+    margin-top: 54px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+}
+.line{
+    float: right;
+    
+}
+
+.container {
+    width: 6000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: inherit;
+}
+
+.box {
+    position: relative;
+    width:862px;
+    height: 55px;
+    /* border: 2px solid black; */
+    
+    margin-left: 490px;
+    margin-top: -37px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+   
+    z-index: 1;
+    padding: 100px 40px 60px;
+    /* box-shadow: 0 15px 45px rgb(0, 0, 0, 0.1); */
+  }
+.box1{
+    background-color:rgb(253, 230, 231);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 103px;
+    height: 134px;
+    width: 250px;
+    padding: 20px;
+    margin-left: 50px;
+    position: relative;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    box-shadow: 10px 15px 10px rgb(156, 154, 154);
+
+}
+
+  .search-field {
+    width: 282px;
+    height: 52px;
+    font-size: medium;
+    margin-top: -22px;
+    padding: 10px;
+    border-radius: 28px;
+    border-color: rgb(103, 161, 184);
+}
+.business{
+    width: 340px;
+}
+.loction{
+    width: 100px;
+}
+.search-btn{
+    height: 73px;
+    width: 150px;
+    margin-top: -41px;
+    margin-left: 13px;
+    border-radius: 30px;
+    font-size: larger;
+    background-color: skyblue;
+}
